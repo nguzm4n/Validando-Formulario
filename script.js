@@ -22,11 +22,8 @@ formulario.addEventListener('submit', (e) => {
         if (tarjetasDeCredito[i].checked) {
          radios = true;
          break;
-         
         } 
     }
-
-
     if(nombre.value == "" ) {
         errores.style.display = 'block';
         e.preventDefault()
@@ -65,7 +62,7 @@ formulario.addEventListener('submit', (e) => {
         errores.style.display = 'block';
         e.preventDefault()
         return false
-    } else if (radios = false) {
+    } else if (radios === false) {
         errores.style.display = 'block';
         e.preventDefault()
         return false
