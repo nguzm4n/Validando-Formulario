@@ -1,0 +1,26 @@
+.title1 {
+    border-bottom: 1px solid hwb(0 63% 35%);
+}
+
+
+.alert {
+    background-color: hsl(0, 82%, 82%);
+}
+
+.alert h3 {
+    color: hsl(0, 68%, 46%);
+    font-size: 20px;
+}
+
+
+ .footer1 {
+    border-top: 1px solid hwb(0 63% 35%); ;
+    background-color: hsl(36, 26%, 96%);
+
+ }
+
+i {
+    font-size: 25px;
+    padding: 10px;
+}
+

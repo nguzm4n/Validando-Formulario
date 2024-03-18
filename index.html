@@ -1,0 +1,111 @@
+<!-- your code below here -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1dbabea4c9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+		<title>Form</title>
+	</head>
+	<body>
+        <form class=" container w-75  border border-dark  rounded mt-5 formulario">
+            <div class="row">
+                <div class="col-md-12 bg-light rounded-top title1">
+                    <h1>Payment form example</h1>
+                </div>   
+                <div class="row mx-auto invalidData">
+                  <div class="col-md-12  mt-3 alert" >
+                    <h3 class="miss">Some fields are missing</h3>
+                  </div>
+            </div>
+            <div class="row input-group mx-auto">
+              <div class="col-md-5 mt-3">
+                <label class="form-label"> Card #
+                </label>
+                <input class="form-control mt-1 tarjeta" type="text" placeholder="XXXXXXXXXXXX">
+              </div>
+              <div class="col-md-3 mt-3">
+                <label class="form-label"> CVC #
+                </label>
+                <input class="form-control mt-1 cvc" type="text" placeholder="XXXXXXXXXXXX">
+              </div>
+              <div class="col-md-4 mt-3">
+                <label class="form-label"> Amount
+                </label>
+                <div class="d-flex">
+                  <p>$</p><input class="form-control mt-1 monto" type="text" placeholder="XXXXXXXXXXXX">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row mx-auto">
+              <div class="col-md-6">
+                <label class="form-label"> Name
+                </label>
+                <input class="form-control w-100 mt-1 string nombre" type="text" placeholder="">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"> Last Name
+                </label>
+                <input class="form-control w-100 mt-1 apellido" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row mx-auto">
+              <div class="col-md-6">
+                <label class="form-label"> City
+                </label>
+                <input class="form-control w-100 mt-1 ciudad" type="text" placeholder="">
+              </div>
+              <div class="col-md-3">
+                <label for="estate" class="form-label"> State
+                </label>
+                <select class="form-select mt-1" name="estate" id="state" placeholder="Pick a state">
+                  <option selected>Pick a state     </option>
+                  <option value="Texas">Texas</option>
+                  <option value="New York">New York</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Florida">Florida</option>
+
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label"> Postal Code
+                </label>
+                <input class="form-control w-100 mt-1 codigoPostal" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="row mx-auto">
+              <div class="col-md-6">
+                <label for="" class="form-label">
+                  <h5>We accept</h5>
+                  <fieldset class="bg-dark p-1 rounded" >
+                    <input class="mx-1 tarjetasDeCredito" type="radio" name="creditCard"><i class="fa-brands fa-cc-mastercard text-light"></i>
+                    <input class="mx-1 tarjetasDeCredito" type="radio" name="creditCard"><i class="fa-brands fa-cc-visa text-light"></i>
+                    <input class="mx-1 tarjetasDeCredito" type="radio" name="creditCard"><i class="fa-brands fa-cc-diners-club text-light"></i>
+                    <input class="mx-1 tarjetasDeCredito" type="radio" name="creditCard"><i class="fa-brands fa-cc-paypal text-light"></i>
+                  </fieldset>
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label for="" class="form-label">
+                  <h5>Message</h5>
+                  <textarea class="form-control mensaje" name="" id="" cols="60" rows="4"></textarea>
+                  <p>Add any notes here.</p>
+                </label>
+              </div>
+            </div>
+            <div class="row mx-auto footer1 rounded-bottom">
+              <div class="col-md-12 d-flex justify-content-end py-3  ">
+                <input type="reset" class="btn btn-secondary mx-2" value="Cancel">
+                <input type="submit" class="btn btn-primary enviar" value="Send">
+              </div>
+            </div>
+          
+        </form>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
